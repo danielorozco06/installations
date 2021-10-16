@@ -29,7 +29,7 @@ if [[ "${entry}" == "y" ]]; then
 fi
 
 echo -e "\n#############################"
-read -r -p "Install nodemon ([n]/y):" entry
+read -r -p "Install Nodemon ([n]/y):" entry
 if [[ "${entry}" == "y" ]]; then
     echo "./nodemonInstall.sh"
     ./nodemonInstall.sh
@@ -47,4 +47,18 @@ read -r -p "Install Angular CLI ([n]/y):" entry
 if [[ "${entry}" == "y" ]]; then
     echo "./angularInstall.sh"
     ./angularInstall.sh
+fi
+
+echo -e "\n#############################"
+read -r -p "Install AWS CLI ([n]/y):" entry
+if [[ "${entry}" == "y" ]]; then
+    echo "./installAWS.sh"
+    ./installAWS.sh
+fi
+
+echo -e "\n#############################"
+read -r -p "Install Docker ([n]/y):" entry
+if [[ "${entry}" == "y" ]]; then
+    echo "./installDocker.sh"
+    ./installDocker.sh
 fi
