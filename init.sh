@@ -62,3 +62,10 @@ if [[ "${entry}" == "y" ]]; then
     echo "./installDocker.sh"
     ./installDocker.sh
 fi
+
+echo -e "\n#############################"
+read -r -p "Install Docker Compose V2 ([n]/y):" entry
+if [[ "${entry}" == "y" ]]; then
+    echo "./installDockerComposeV2.sh"
+    ./installDockerComposeV2.sh
+fi
