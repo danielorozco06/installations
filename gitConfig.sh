@@ -14,3 +14,6 @@ echo -e ""
 read -r -p "Ingresar correo:" correo
 echo "git config --global user.email $correo"
 git config --global user.email "$correo"
+
+echo -e "\ngit config --global credential.helper store"
+git config --global credential.helper store
