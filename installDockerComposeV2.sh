@@ -20,3 +20,9 @@ curl -L https://raw.githubusercontent.com/docker/compose-cli/main/scripts/instal
 echo -e "\nTest your installation"
 echo -e "docker compose version"
 docker compose version
+
+echo ""
+read -r -p "¿Reiniciar terminal para aplicar cambios?([n]/y):" reload
+if [[ "${reload}" == "y" ]]; then
+    bash
+fi
