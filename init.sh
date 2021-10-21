@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
 echo -e "\n#############################"
+read -r -p "Configure wsl.conf ([n]/y):" entry
+if [[ "${entry}" == "y" ]]; then
+    echo "./setWslConf.sh"
+    ./setWslConf.sh
+fi
+
+echo -e "\n#############################"
 read -r -p "Configure git ([n]/y):" entry
 if [[ "${entry}" == "y" ]]; then
     echo "./gitConfig.sh"
