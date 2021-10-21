@@ -13,6 +13,10 @@ echo -e "\nApply executable permissions to the binary"
 echo -e "sudo chmod +x $composePath/docker-compose"
 sudo chmod +x "$composePath"/docker-compose
 
+echo -e "\nInstall docker compose cli - to enable command on AWS"
+echo -e "curl -L https://raw.githubusercontent.com/docker/compose-cli/main/scripts/install/install_linux.sh | sh"
+curl -L https://raw.githubusercontent.com/docker/compose-cli/main/scripts/install/install_linux.sh | sh
+
 echo -e "\nTest your installation"
 echo -e "docker compose version"
 docker compose version
